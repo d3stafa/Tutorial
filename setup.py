@@ -4,14 +4,14 @@ setup(
     name='clean_folder',
     version='1.0.0',
     description='This code can clean ur folder',
-    url='',
-    author='',
-    author_email='',
-    license='',
-    packages=[],
+    url='https://github.com/d3stafa/clean_folder',
+    author='Hripich Tymofii',
+    author_email='hripich.tymofii@outlook.com',
+    license='MIT',
+    packages=['clean_folder'],
     entry_points={
-        'console_scrips' : [
-
+        'console_scrips': [
+            'clean_folder = clean_folder.clean_folder.clean:process_folder'
         ]
     }
 
