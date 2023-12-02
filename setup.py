@@ -10,7 +10,7 @@ setup(
     license='MIT',
     packages=['clean_folder'],
     entry_points={
-        'console_scrips': [
+        'console_scripts': [
             'clean-folder = clean_folder.clean:main'
         ]
     }
