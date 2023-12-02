@@ -48,12 +48,18 @@ def process_folder(folder_path):
 
 
 
-if len(sys.argv) != 2:
-    print("Usage: python sort.py <folder_path>")
-    sys.exit(1)
+def main ():
+    if len(sys.argv) != 2:
+       print("Usage: python sort.py <folder_path>")
+       sys.exit(1)
 
-folder_path = sys.argv[1]
+    folder_path = sys.argv[1]
 
-if not os.path.exists(folder_path):
-    print(f"Folder '{folder_path}' doesn't exist.")
-    sys.exit(1)
+    if not os.path.exists(folder_path):
+        print(f"Folder '{folder_path}' doesn't exist.")
+        sys.exit(1)
+    process_folder(folder_path)
+
+if __name__ == "__main__":
+
+         main()
